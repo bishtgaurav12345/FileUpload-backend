@@ -16,6 +16,7 @@
     "express-fileupload": "^1.4.3",
     "mongodb": "^6.3.0",
     "mongoose": "^7.6.7",
+    "nodemailer": "^6.9.8",
     "nodemon": "^2.0.22"
   },
   "description": ""

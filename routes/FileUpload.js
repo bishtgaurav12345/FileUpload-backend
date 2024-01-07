@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const {localFileUpload,imgUpload} = require("../controllers/fileUpload");
+const {localFileUpload, imageUpload,videoUpload, imageSizeReducer} = require("../Controllers/fileUpload");
 
 //api route
 router.post("/localFileUpload",localFileUpload );
-router.post("/imgUpload",imgUpload );
+router.post("/imageUpload",imageUpload );
+router.post("/videoUpload",videoUpload );
+router.post("/imageSizeReducer", imageSizeReducer);
+
 module.exports = router;
